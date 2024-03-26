@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'services',
-    'crispy_forms',
     'crispy_bootstrap4',
     'embed_video',
 ]
