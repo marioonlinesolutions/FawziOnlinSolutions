@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+
+{% block content %}
+<body class="overall">
+      <div class="mario-online" style="background-image: url('static/webback.png');">
+            <div class="color-overlay">
+                  <div class="container"><h1>Mario<br>Online Solutions</h1><br>
+                  <h3>Your New AI assistant</h3></div>
+            </div>
+      </div><br>
+      <h3>What We Are Doing?</h3>
+      <br><br>
+      <div class="row" style="margin: 3px;">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card">
+            <div class="card-body">
+                  <h5 class="card-title">The Best Database Management Systems</h5>
+                  <p class="card-text">Our company is using the best tools ever to delever the best service ever to our clints
+                  when it comes to Database, becuase we Do believe that <strong>Data</strong> is really essntial to everone <br>
+                  Check Out our Dashboard to see Our products and see, Also you can <a href="{% url 'sendemail' %}"></a> us an email to help you with your businesses.</p>
+                  <a href="{% url 'dashboard' %}" class="btn btn-primary">Check From Here</a>
+            </div>
+            </div>
+            </div>
+            <div class="col-sm-6" >
+            <div class="card">
+            <div class="card-body">
+                  <h5 class="card-title">Creating Your New Company Website, Is Our Job</h5>
+                  <p class="card-text">By creating a website to your new business is really essntial, Because you will
+                        save your clients time by uploading all your product or services information online,
+                        and this step will increase your number of customer because they trust you, check out the box below to see our <strong>Free services</strong></p>
+                  <a href="{% url 'dashboard' %}" class="btn btn-primary">check from here</a>
+            </div>
+            </div>
+            </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <p><center>"Welcome to Mario Onlice Solutions! Specializing in cutting-edge solutions for database management, website development,<br>
+            and application creation tailored to businesses of all sizes. <br>
+            Explore our showcase of successful projects, backed by glowing client testimonials. Ready to elevate your online presence? Contact us today for personalized consultations and innovative solutions that drive results</center></p>
+      <br>
+      <br>
+      <div class="container">
+            <div class="row">
+            <div class="col-md-6">
+            <div class="card mb-3" style="max-width: 540px; margin: 3px;">
+                  <div class="row g-0">
+                  <div class="col-md-4">
+                  <img src="static/qitime.png" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                  <div class="card-body">
+                        <h5 class="card-title">Your Time Is Valuable</h5>
+                        <p class="card-text">Because Mario Online Solutions believes our customer's time is valuable, you will get answers to all your requests within one hour with all the required details.</p>
+                  </div>
+                  </div>
+                  </div>
+            </div>
+            </div>
+            <div class="col-md-6">
+            <div class="card mb-3" style="max-width: 540px; margin: 3px;">
+                  <div class="row g-0">
+                  <div class="col-md-4">
+                  <img src="static/youtubechannel.png" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                  <div class="card-body">
+                        <h5 class="card-title">Youtube Channel</h5>
+                        <p class="card-text">You can access and watch our Youtube Videos as well from here <br>
+                              and watch all our projects videos <strong>For Free</strong>.</p>
+                  </div>
+                  </div>
+                  </div>
+            </div>
+            </div>
+            </div>
+            <br><br>
+                  </div>
+                  </div>
+                  <div class="container">
+                        <div class="row">
+                        <div class="col-md-6">
+                        <div class="card mb-3" style="max-width: 540px; margin: 3px;">
+                              <div class="row g-0">
+                              <div class="col-md-4">
+                              <img src="static/artic.png" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                              <div class="card-body">
+                                    <h5 class="card-title">We Have Our Own Content</h5>
+                                    <p class="card-text">We believe our customers for that reason, and they believe us, we do have our own content and ower own articles, because we do contribute in changing the future, you can check our recent <a href="{% url 'dashboard'%}">articles from here</a>.</p>
+                              </div>
+                              </div>
+                              </div>
+                        </div>
+                        </div>
+                        <div class="col-md-6">
+                        <div class="card mb-3" style="max-width: 540px; margin: 3px;">
+                              <div class="row g-0">
+                              <div class="col-md-4">
+                              <img src="static/Porto.png" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                              <div class="card-body">
+                                    <h5 class="card-title">We Do Have Studio</h5>
+                                    <p class="card-text">We do have studio you can simply access and see all of our projects and some of them for free, just in case you don't have a currnt pictuer about the website you need, we sure about somthing from here you would like <a href="{% url 'dashboard' %}">check them out</a></p>
+                              </div>
+                              </div>
+                              </div>
+                        </div>
+                        </div>
+                        </div>
+      </div>
+
+      
+</body>
+{% endblock %}

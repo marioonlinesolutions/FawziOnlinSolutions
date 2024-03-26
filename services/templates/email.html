@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<body>
+<div class="container">
+      <div class="email">
+            <div style="display: flex;">
+            <div style="flex: 1;">
+                  <h4>Start creating tasks by sending us all the information in the following format:</h4>
+                  <br>
+                  <br>
+                  <ol>
+                        <li>My First Name: <span class="info-placeholder">.......</span></li>
+                        <li>My Last Name: <span class="info-placeholder">........</span></li>
+                        <li>My Country: <span class="info-placeholder">........</span></li>
+                        <li>My Email Address: <span class="info-placeholder">........</span></li>
+                        <li>Reason Of Contact: <span class="info-placeholder">..............</span></li>
+                        <li>Phone Number To Text You: <span class="info-placeholder">...............</span></li>
+                        <li>Other Information: <span class="info-placeholder">...............</span></li>
+                  </ol>
+            </div>
+            <div style="flex: 1;">
+                  <form method="POST" autocomplete="off" class="email-form">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                  </form>
+                  <br>
+                  {% if messages %}
+                  <div class="alert alert-success" role="alert" style="text-align: center;">
+                        <ol class="messages" >
+                              {% for message in messages %}
+                                    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>
+                                          {{ message }}</li>
+                              {% endfor %}
+                        </ol>
+                  </div>
+                  {% endif %}
+            </div>
+            </div>
+            <br><br>
+            <p>Once you click on the submit button, an email will be sent and your request will be reviewed by one of our experts. We will get back to you within <strong>one hour</strong> maximum to answer all your questions. Thank you for working with us.</p>
+      </div>      
+</div>
+</body>
+{% endblock %}

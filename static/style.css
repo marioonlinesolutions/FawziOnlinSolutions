@@ -1,0 +1,86 @@
+.video-container {
+      display: flex;
+      flex-wrap: wrap;
+}
+
+.video-wrapper {
+      width: 50%; /* Set width as desired */
+      padding: 40px; /* Add padding between videos */
+      box-sizing: border-box; /* Include padding in element's total width */
+}
+
+/* Adjust styles for small screens */
+@media (max-width: 768px) {
+      .video-wrapper {
+      width: 100%; /* Make videos full-width on smaller screens */
+      }
+}  
+
+.video-description {
+      margin-top: 5px;
+      font-size: 14px; 
+      color: #666; /* Adjust color as needed */
+}
+
+.mario-online{
+      background-size: cover;
+      position: relative;
+      min-height: 60vh;
+}
+.mario-online h1{
+      color: black;
+      position: absolute;
+      top: 30px;
+      font-family: cursive;
+}
+.mario-online h3{
+      color: black;
+      position: absolute;
+      max-width: 550;
+      bottom: 35px;
+      font-family: cursive;
+}
+
+.color-overlay{
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: rgb(52,116,238);
+      background: linear-gradient(90deg, rgba(52,116,238,1) -20%, rgba(37,184,232,0) 26%);
+}
+
+.submitbu{
+      border-radius: 3px;
+      margin: auto;
+      height: auto;
+      padding: 10px;
+      cursor: pointer;
+      background-color: rgb(99, 99, 207);
+      color: azure;
+      border: none;
+
+}
+
+form {
+      width: 50%;
+      margin: auto;
+}
+
+.submit-button {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+}
+
+.submit-button:hover {
+      background-color: #0056b3;
+}
+
+
+.overall{
+      margin-right: 2px;
+}

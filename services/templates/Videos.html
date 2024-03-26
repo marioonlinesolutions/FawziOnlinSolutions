@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load embed_video_tags %}
+{% block content %}
+<br>
+<div class="container">
+      <h3><center>From here you can watch our latest youtube videos</center></h3>
+</div>
+<br>
+<div class="video-container">
+      {% for I in ve %}
+            <div class="video-wrapper">
+                  {% video I.video 'small' %}
+                  <p class="video-description">{{ I.discription }}</p>
+            </div>
+      {% endfor %}
+</div>  
+{% endblock %}
